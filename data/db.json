@@ -29,17 +29,33 @@
     {
       "id": 1,
       "classList": [
+        "double-left",
+        "uil",
+        "uil-angle-double-left"
+      ]
+    },
+    {
+      "id": 2,
+      "classList": [
         "left",
         "uil",
         "uil-angle-left"
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "classList": [
         "right",
         "uil",
         "uil-angle-right"
+      ]
+    },
+    {
+      "id": 4,
+      "classList": [
+        "double-right",
+        "uil",
+        "uil-angle-double-right"
       ]
     }
   ]

@@ -1,4 +1,5 @@
 export class Button {
+  static isWorking = false;
   classList = [];
   dom;
   constructor(classList = []) {

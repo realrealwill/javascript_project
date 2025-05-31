@@ -46,7 +46,7 @@ body {
   background-color: var(--color-lightgray);
   @include flexCenter;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: flex-center;
   overflow: hidden;
 }
 
@@ -72,7 +72,7 @@ body {
   aspect-ratio: 1;
   @include flexCenter;
   border-radius: 50%;
-  cursor: pointer;  // 光标变成手
+  cursor: pointer; // 光标变成手
   background-color: var(--color-blue);
   @include buttonBoxShadow;
   font-size: 3rem;
@@ -81,4 +81,44 @@ body {
 .btn:active {
   background-color: var(--color-blue-dark);
   box-shadow: none;
+}
+
+.card {
+  width: 20rem;
+  aspect-ratio: 2/3;
+  @include backgroundImageCenter;
+  @include cardBoxShadow;
+  position: absolute;
+  transition: 0.5s;
+}
+
+.card-group {
+  position: relative;
+  @include flexCenter;
+  gap: 2rem;
+  left: 50%;
+  width: 50%;
+  height: 30%;
+
+  :nth-child(1) {
+    opacity: 0;
+    left: calc(-22rem);
+  }
+
+  :nth-child(2) {
+    left: calc(-22rem + (20rem + 2rem) * 1);
+  }
+
+  :nth-child(3) {
+    left: calc(-22rem + (20rem + 2rem) * 2);
+  }
+
+  :nth-child(4) {
+    left: calc(-22rem + (20rem + 2rem) * 3);
+  }
+
+  :nth-child(n + 5) {
+    opacity: 0;
+    left: calc(-22rem + (20rem + 2rem) * 4);
+  }
 }
